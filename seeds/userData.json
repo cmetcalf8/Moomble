@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Cory",
+      "email": "cmetcalf8@gmail.com",
+      "password": "password"
+    },
+    {
+      "name": "Kolby",
+      "email": "kolby.kimball10@gmail.com",
+      "password": "password"
+    },
+    {
+      "name": "Austin",
+      "email": "austinchaz11@gmail.com",
+      "password": "password"
+    },
+    {
+        "name": "Dillon",
+        "email": "dillonpatino14@gmail.com",
+        "password": "password"
+      }
+  ]
