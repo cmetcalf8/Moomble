@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS moomble_db;
+CREATE DATABASE moomble_db;
