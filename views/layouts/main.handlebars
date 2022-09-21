@@ -5,10 +5,27 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Food Finder</title>
         <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script src="https://kit.fontawesome.com/02ad37c479.js" crossorigin="anonymous"></script>
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     </head>
-
     <body>
+        <div class="flex-column justify-space-around">
+          <header class="display-flex justify-space-between align-center p-2">
+            <h1>
+              <a href="/"><i class="fa-solid fa-bacon"></i> Moomble <i class="fa-solid fa-pizza-slice"></i></a>
+            </h1>
+            <h2>Let's Find Something to Eat!!</h2>
+
+            <nav>
+              <!-- Conditionally render login or logout links -->
+              {{#if logged_in}}
+              <a href="/profile">profile</a> |
+              <button class="no-button" id="logout">logout</button>
+              {{else}}
+              <a href="/js/login">login</a>
+              {{/if}}
+            </nav>
+    
         <header>
             <h1>What Should I Eat?<i class="fa-duotone fa-burger-soda"></i></h1>
         
@@ -17,8 +34,22 @@
             
         </nav>
 
+          </header>
 
+          <main class="container container-fluid mt-5">
+            <!-- Render the sub layout -->
+            {{{ body }}}
+          </main>
 
+          <footer>
+            
+          </footer>
+        </div>
+      
+        <!-- Render script for logged in users only -->
+        {{#if logged_in}}
+        <script src="/js/logout.js"></script>
+        {{/if}}
 
 
 
