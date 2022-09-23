@@ -2,7 +2,7 @@ const sequelize = require('../config/connection');
 const { User, Restaurant } = require('../models');
 
 const userData = require('./userData.json');
-const restaurantData = require('./restaurantData.json');
+// const restaurantData = require('./restaurantData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -12,14 +12,14 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  for (const restaurant of restaurantData) {
-    await Restaurant.create({
-      ...restaurant,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
-    });
-  }
+//   for (const restaurant of restaurantData) {
+//     await Restaurant.create({
+//       ...restaurant,
+//       user_id: users[Math.floor(Math.random() * users.length)].id,
+//     });
+//   }
 
-  process.exit(0);
+//   process.exit(0);
 };
 
 seedDatabase();
