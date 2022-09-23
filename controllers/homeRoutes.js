@@ -2,9 +2,18 @@ const router = require('express').Router();
 const { Restaurant, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '803769a760msh0b927317a3037b5p16a8f3jsnaab08108dfb1',
+		'X-RapidAPI-Host': 'restaurants-near-me-usa.p.rapidapi.com'
+	}
+};
+
 router.get('/', async (req, res) => {
   try {
     // Get all restaurants and JOIN with user data
+    const restaurantAPI = req.params.zip;
     const restaurantData = await Restaurant.findAll({
       include: [
         {
@@ -14,14 +23,22 @@ router.get('/', async (req, res) => {
       ],
     });
 
-    // Serialize data so the template can read it
-    const restaurants = restaurantData.map((restaurant) => restaurant.get({ plain: true }));
-
-    // Pass serialized data and session flag into template
-    res.render('homepage', { 
+    fetch(`https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/zipcode/${restaurantAPI}/0`, options)
+	.then(response => response.json())
+	.then(response => {
+    console.log(response)
+    res.render('results', { 
       restaurants, 
       logged_in: req.session.logged_in 
     });
+  })
+	.catch(err => console.error(err));
+
+    // Serialize data so the template can read it
+    // const restaurants = restaurantData.map((restaurant) => restaurant.get({ plain: true }));
+
+    // Pass serialized data and session flag into template
+
   } catch (err) {
     res.status(500).json(err);
   }

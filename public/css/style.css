@@ -2,8 +2,11 @@
     --primary: #091457;
     --secondary: #1862c4;
     --tertiary: #000000;
+    --quatrinary: #6c6b67;
     --light: #f6fcfb;
     --dark: #f51d15;  
+    --error: rgb(228, 46, 1);
+    --border-radius: 0.3rem;
 }
 
 body {
@@ -15,6 +18,13 @@ body {
     justify-content: flex-start;
     background-color: var(--light);
   }
+
+img {
+  width: fit-content;
+  height: 10rem;
+  attachment: fixed;
+  position: relative;
+}
   
 header {
     padding: 10px;
@@ -35,6 +45,7 @@ header {
   nav {
     display: flex;
     background-color: var(--secondary);
+    margin: auto;
   }
   
   nav a {
@@ -47,4 +58,63 @@ header {
   nav a:hover {
     color: var(--secondary);
     background-color: var(--dark);
+  }
+
+  .resultsTitle {
+    text-align: center;
+  }
+
+  .login-card {
+    margin: 0 0 20px 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+    border: 3px solid var(--dark);
+    border-radius: var(--border-radius);
+    border-style: double;
+    border-width: thick;
+    background-color: var(--primary);
+    color: var(--light);
+  }
+
+  .container {
+    /* margin: auto; */
+    text-align: center;
+  }
+
+  .search-card {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    /* display: block;
+    position: center;  */
+    /* border-radius: 5px; */
+    border: 3px solid #091457;
+    
+  }
+
+  .review-card {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    /* display: block;
+    position: center;  */
+    /* border-radius: 5px; */
+    border: 3px solid #091457;
+  }
+
+  .col-md-5 {
+    display: inline-block;
+  }
+
+  .col-md-6 {
+    text-align: center;
+  }
+
+  h2 {
+    margin: auto;
+  }
+
+  .row {
+    text-align: center;
   }
