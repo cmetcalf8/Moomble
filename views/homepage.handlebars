@@ -1,0 +1,12 @@
+{{#each restaurants as |restaurant|}}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+        <a href="/restaurant/{{restaurant.id}}">{{restaurant.name}}</a>
+    </h2>
+<div class="col-md-7">
+    <p>
+        {{restaurant.description}}
+    </p>
+</div>
+{{/each}}
