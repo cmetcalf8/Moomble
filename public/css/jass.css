@@ -190,7 +190,7 @@
   [type='button'],
   [type='reset'],
   [type='submit'] {
-    -webkit-appearance: button;
+  
   }
   
   /**
@@ -362,7 +362,7 @@
   }
   
   h1,
-  h2,
+  /* h2, */
   h3,
   h4,
   h5,
@@ -420,13 +420,12 @@
   }
   
   a {
-    color: #1b89bc;
+    color: #fcfcfd;
     text-decoration: none;
   }
   
   a:hover {
-    color: #065b83;
-    text-decoration: underline;
+    color: #ca0202;
   }
   
   /* HEIGHT / WIDTH UTILS */
@@ -963,10 +962,6 @@
   
   .display-inline {
     display: inline !important;
-  }
-  
-  .display-flex {
-    display: flex !important;
   }
   
   .btn {
