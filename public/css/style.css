@@ -57,20 +57,31 @@ header {
 
   nav {
     display: flex;
-    background-color: var(--secondary);
     margin: auto;
   }
   
   nav a {
-    color: var(--tertiary);
+    color: var(--light);
     padding: 6px 12px;
     text-decoration: none;
     text-align: center;
   }
   
   nav a:hover {
-    color: var(--secondary);
-    background-color: var(--dark);
+    color: var(--light);
+    background-color: var(--secondary);
+    border: solid var(--light);
+  }
+
+  button {
+    color:var(--light);
+    background-color: var(--primary);
+  }
+
+  button:hover {
+    color: var(--light);
+    background-color: var(--secondary);
+    border: solid var(--light);
   }
 
   .resultsTitle {

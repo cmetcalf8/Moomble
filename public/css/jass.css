@@ -190,7 +190,7 @@
   [type='button'],
   [type='reset'],
   [type='submit'] {
-    -webkit-appearance: button;
+  
   }
   
   /**
@@ -962,10 +962,6 @@
   
   .display-inline {
     display: inline !important;
-  }
-  
-  .display-flex {
-    display: flex !important;
   }
   
   .btn {
