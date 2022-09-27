@@ -1,5 +1,28 @@
 <div class="row">
   <div class="col-auto resultsTitle">
+
+    {{#each data}}
+        <div class="row">{{restaurantName}}</div>
+        <div class="row">{{cuisineType}}</div>
+        <div class="row">{{address}}</div>
+        <br>
+    {{/each}}
+
+    {{!-- {
+      id: 5585339,
+      restaurantName: 'Taste Of India Grill',
+      address: '282 S 500 W',
+      zipCode: '84010',
+      phone: '+1 801-683-7393',
+      website: 'http://www.tasteofindiagrillutah.com/',
+      email: 'hardeep_chonan81@yahoo.com',
+      latitude: '40.886345',
+      longitude: '-111.893135',
+      stateName: 'UT',
+      cityName: 'Bountiful',
+      hoursInterval: 'Mon - Thu (11:00 AM - 9:00 PM) | Fri - Sat (11:00 AM - 10:00 PM)',
+      cuisineType: 'Asian,Indian'
+    }, --}}
     <h2>Your Search Results:</h2>
   </div>
 </div>
