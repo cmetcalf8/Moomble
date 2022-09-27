@@ -26,6 +26,7 @@ img {
   height: 10rem;
   attachment: fixed;
   position: relative;
+  opacity: 0.8;
 }
   
 header {
@@ -42,6 +43,16 @@ header {
   
   h2 {
     color: var(--dark);
+  }
+
+  h3 {
+    color: #3f038d;
+    background-color:rgba(254, 254, 255, 0.8);
+  }
+
+  h4 {
+    font-size: 12px;
+    text-align: center;
   }
 
   nav {
@@ -92,7 +103,7 @@ header {
     position: center;  */
     /* border-radius: 5px; */
     border: 3px solid #091457;
-    
+    background-color: rgba(254, 254, 255, 0.8);
   }
 
   .review-card {
@@ -103,6 +114,8 @@ header {
     position: center;  */
     /* border-radius: 5px; */
     border: 3px solid #091457;
+    background-color: rgba(254, 254, 255, 0.8);
+    text-align: center;
   }
 
   .col-md-5 {
@@ -111,10 +124,6 @@ header {
 
   .col-md-6 {
     text-align: center;
-  }
-
-  h2 {
-    margin: auto;
   }
 
   .row {
