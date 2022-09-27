@@ -1,10 +1,12 @@
 <div class="row">
   <div class="col-auto resultsTitle">
+    <h2>Your Search Results:</h2>
 
     {{#each data}}
         <div class="row">{{restaurantName}}</div>
         <div class="row">{{cuisineType}}</div>
         <div class="row">{{address}}</div>
+        <div class="row">{{cityName}}</div>
         <br>
     {{/each}}
 
@@ -23,8 +25,5 @@
       hoursInterval: 'Mon - Thu (11:00 AM - 9:00 PM) | Fri - Sat (11:00 AM - 10:00 PM)',
       cuisineType: 'Asian,Indian'
     }, --}}
-    <h2>Your Search Results:</h2>
   </div>
 </div>
-
-<script src="/public/js/results.js"></script>

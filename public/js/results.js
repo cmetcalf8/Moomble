@@ -1,16 +1,11 @@
-const userInputEl = document.getElementById(".userInput");
-const restaurantAPI = userInputEl.value;
-const apiKey = '803769a760msh0b927317a3037b5p16a8f3jsnaab08108dfb1'
+const userInputEl = document.querySelector(".form-input");
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '803769a760msh0b927317a3037b5p16a8f3jsnaab08108dfb1',
-		'X-RapidAPI-Host': 'restaurants-near-me-usa.p.rapidapi.com'
-	}
-};
+let search = document.querySelector(".search-form");
 
-fetch(`https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/zipcode/${restaurantAPI}/0`, options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+const results = (event) => {
+	event.preventDefault();
+	zipCode = userInputEl.value;
+	document.location.replace(`/api/results/${zipCode}`)
+}
+
+search.addEventListener('submit', results);
