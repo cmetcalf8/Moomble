@@ -2,9 +2,9 @@ const router = require('express').Router();
 const axios = require('axios');
 
 
-router.get('/:id', async (req, res) => {
+router.get('/:zip', async (req, res) => {
   try {
-    let zipCode = req.params.id
+    let zipCode = req.params.zip
     axios({
         method: 'GET',
         headers: {
