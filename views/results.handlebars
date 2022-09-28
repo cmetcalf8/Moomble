@@ -1,9 +1,9 @@
-<div class="row">
+<div class="results-card">
   <div class="col-auto resultsTitle">
-    <h2>Your Search Results:</h2>
+    <h2 id="search-results">Your Search Results:</h2>
 {{!-- {{log data}} --}}
     {{#each data}}
-        <div class="row">{{restaurantName}}</div>
+        <div class="row-name" >{{restaurantName}}</div>
         <div class="row">{{cuisineType}}</div>
         <div class="row">{{address}}</div>
         <div class="row">{{cityName}}</div>
