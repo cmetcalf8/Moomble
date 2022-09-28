@@ -140,3 +140,7 @@ header {
   .row {
     text-align: center;
   }
+
+  #profile-restaurant {
+    color: var(--dark);
+  }

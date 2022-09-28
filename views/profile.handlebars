@@ -17,7 +17,7 @@
           </div>
           <div class="form-group">
             <label for="pricing-tier">Pricing tier ($):</label>
-            <input class="form-input" type="number" id="pricing-tier" name="pricing-tier" />
+            <input class="form-input" type="number" min="1" max="5" id="pricing-tier" name="pricing-tier" />
           </div>
           <div class="form-group">
             <label for="dish-desc">Dish description:</label>
@@ -36,7 +36,7 @@
         {{#each restaurants as |restaurant|}}
         <div class="row mb-2">
           <div class="col-md-8">
-            <h4><a href="/restaurant/{{restaurant.id}}">{{restaurant.name}}</a></h4>
+            <h4><a href="/restaurant/{{restaurant.id}}" id="profile-restaurant">{{restaurant.name}}</a></h4>
           </div>
           <div class="col-md-4">
             <button class="btn btn-sm btn-danger" data-id="{{restaurant.id}}">DELETE</button>
