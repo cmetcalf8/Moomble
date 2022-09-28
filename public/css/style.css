@@ -198,6 +198,6 @@ header {
 
   .text-center {
     background-color: rgba(254, 254, 255, 0.9);
-    border: solid var(--primary)
+    border: solid var(--primary);
     border-radius: 5px;
   }
