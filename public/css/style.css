@@ -166,6 +166,10 @@ header {
 
   .results-card {
     text-align: center;
+  }
+
+  #profile-restaurant {
+    color: var(--dark);
     font-weight: bold;
     border: solid var(--primary);
     border-radius: 5px;
