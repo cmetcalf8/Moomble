@@ -40,6 +40,14 @@ header {
     color: var(--light);
     text-decoration: none;
   }
+
+  i {
+    color: #d03737;
+  }
+  i:hover {
+    color: #1862c4;
+
+  }
   
   h2 {
     color: var(--dark);
@@ -129,6 +137,18 @@ header {
     text-align: center;
   }
 
+  #restaurant {
+    color:var(--primary);
+  }
+
+  #restaurant:hover {
+    color: var(--dark)
+  }
+
+  #fav-res {
+    display: inline-block;
+  }
+
   .col-md-5 {
     display: inline-block;
   }
@@ -136,11 +156,48 @@ header {
   .col-md-6 {
     text-align: center;
   }
+  
+  button {
+    text-align: center;
+  }
+  .btn{
+    text-align: center;
+  }
 
-  .row {
+  .results-card {
     text-align: center;
   }
 
   #profile-restaurant {
     color: var(--dark);
+    font-weight: bold;
+    border: solid var(--primary);
+    border-radius: 5px;
+    background-color: rgba(254, 254, 255, 0.9);
+  }
+
+  .search-results {
+    color: var(--primary);
+    font-style: italic;
+  }
+
+  .row {
+   color: var(--primary); 
+  }
+
+  .row-name {
+    font-size: large;
+    text-decoration: underline;
+  }
+
+  .row-name:hover {
+    color: var(--dark);
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+
+  .text-center {
+    background-color: rgba(254, 254, 255, 0.9);
+    border: solid var(--primary)
+    border-radius: 5px;
   }
