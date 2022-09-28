@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-auto resultsTitle">
     <h2>Your Search Results:</h2>
-
+{{!-- {{log data}} --}}
     {{#each data}}
         <div class="row">{{restaurantName}}</div>
         <div class="row">{{cuisineType}}</div>
@@ -9,6 +9,10 @@
         <div class="row">{{cityName}}</div>
         <br>
     {{/each}}
+
+{{!-- {{#if logged_in}}
+{{> tacocat}}
+{{/if}} --}}
 
     {{!-- {
       id: 5585339,
