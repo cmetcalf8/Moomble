@@ -6,7 +6,7 @@ const newFormHandler = async (event) => {
     const description = document.querySelector('#dish-desc').value.trim();
   
     if (name && pricing && description) {
-      const response = await fetch(`/api/projects`, {
+      const response = await fetch(`/api/restaurants`, {
         method: 'POST',
         body: JSON.stringify({ name, pricing, description }),
         headers: {
