@@ -30,19 +30,21 @@
       </div>
 
       {{#if restaurants.length}}
-      <div class="col-md-6 restaurant-list">
-        <h3>Favorite Restaurants:</h3>
+      <div class="container" id="fav-res">
+        <div class="col-md-6 restaurant-list">
+          <h3>Favorite Restaurants:</h3>
 
-        {{#each restaurants as |restaurant|}}
-        <div class="row mb-2">
-          <div class="col-md-8">
-            <h4><a href="/restaurant/{{restaurant.id}}">{{restaurant.name}}</a></h4>
+          {{#each restaurants as |restaurant|}}
+          <div class="row mb-2">
+            <div class="col-md-8">
+              <h4><a id="restaurant" href="/restaurant/{{restaurant.id}}">{{restaurant.name}}</a></h4>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-sm btn-danger" data-id="{{restaurant.id}}">DELETE</button>
+            </div>
           </div>
-          <div class="col-md-4">
-            <button class="btn btn-sm btn-danger" data-id="{{restaurant.id}}">DELETE</button>
-          </div>
+          {{/each}}
         </div>
-        {{/each}}
       </div>
       {{/if}}
     </div>
