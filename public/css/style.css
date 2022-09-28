@@ -28,6 +28,13 @@ img {
   position: relative;
   opacity: 0.8;
 }
+
+img:hover {
+  opacity: 1;
+  width: max-content;
+  height: 20rem;
+  
+}
   
 header {
     padding: 10px;
@@ -122,7 +129,7 @@ header {
     position: center;  */
     /* border-radius: 5px; */
     border: 3px solid #091457;
-    background-color: rgba(254, 254, 255, 0.8);
+    background-color: rgba(254, 254, 255, 0.9);
   }
 
   .review-card {
@@ -145,10 +152,6 @@ header {
     color: var(--dark)
   }
 
-  #fav-res {
-    display: inline-block;
-  }
-
   .col-md-5 {
     display: inline-block;
   }
@@ -166,6 +169,8 @@ header {
 
   .results-card {
     text-align: center;
+    background-color: rgba(254, 254, 255, 0.9);
+    border: solid var(--primary);
   }
 
   #profile-restaurant {
@@ -181,19 +186,21 @@ header {
     font-style: italic;
   }
 
-  .row {
+  .row-name {
    color: var(--primary); 
+   text-align: center;
   }
 
-  .row-name {
+  .row-title {
     font-size: large;
     text-decoration: underline;
+    font-weight: bold;
   }
 
-  .row-name:hover {
+  .row-title:hover {
     color: var(--dark);
-    font-weight: bolder;
-    text-transform: capitalize;
+    font-weight: 900;
+    font-size: larger;
   }
 
   .text-center {
