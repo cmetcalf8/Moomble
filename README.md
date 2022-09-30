@@ -9,7 +9,7 @@ The purpose of this group project is to develop an application where users can s
 ![Screen Shot 2022-09-28 at 6 32 02 PM](https://user-images.githubusercontent.com/107006987/192912184-9837ef09-efa2-4ef7-aeae-2ed234c326a6.png)
 
 ## Deployed application
-
+https://moomble.herokuapp.com/
 ## How to use
 - In the zip code box, enter a valid zip code for a desired search area.
 - To login, click the login button.  Enter your credentials under the prompted information.
